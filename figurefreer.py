@@ -187,6 +187,7 @@ class TaskBarIcon(wx.TaskBarIcon):
 
         # Then we call wx.AboutBox giving it that info object
         wx.AboutBox(info)
+        painter.Destroy()
 
     def OnSetting(self, event):
         alive = False
